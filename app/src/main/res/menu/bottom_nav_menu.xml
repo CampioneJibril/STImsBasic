@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item android:title="Profile"-->
+<!--        android:icon="@drawable/ic_baseline_person_24"-->
+<!--        android:id="@+id/profile" />-->
+    <item android:title="Stats"
+        android:icon="@drawable/ic_baseline_auto_graph_24"
+        android:id="@+id/stats"/>
+
+    <item android:title="Scan"
+    android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+    android:id="@+id/scan"/>
+
+    <item android:title="QR"
+        android:icon="@drawable/ic_baseline_qr_code_24"
+        android:id="@+id/qr"/>
+
+</menu>

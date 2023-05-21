@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBarTheme" parent="Theme.MaterialComponents">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/sti_white</item>
+        <item name="colorPrimaryDark">@color/sti_blue</item>
+        <item name="colorAccent">@color/sti_yellow</item>
+
+        <item name="titleTextColor">@color/sti_beige</item>
+        
+        <item name="actionBarStyle">@style/MyActionBarStyle</item>
+
+    </style>
+</resources>

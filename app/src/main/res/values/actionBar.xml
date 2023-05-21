@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyActionBarStyle" parent="@style/Widget.MaterialComponents.ActionBar.Primary">
+        <!-- Set the background color of the action bar -->
+        <item name="background">@color/sti_blue</item>
+
+        <!-- Set the text color of the action bar title and icons -->
+        <item name="titleTextColor">@color/sti_beige</item>
+        <item name="titleTextStyle">@style/Theme.MaterialComponents</item>
+
+
+    </style>
+
+</resources>
