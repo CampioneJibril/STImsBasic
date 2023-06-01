@@ -205,15 +205,9 @@ public class ScanFragment extends Fragment {
 
     public void checkInData(DatabaseReference databaseReferenceRef, String date, String check_in, String name) {
         databaseReferenceRef.child("Date").setValue(date);
-        databaseReferenceRef.child("Check_In").setValue(check_in);
+        databaseReferenceRef.child("Present").setValue(check_in);
         databaseReferenceRef.child("Name").setValue(name);
-        Toast.makeText(getActivity(), "Checked In", Toast.LENGTH_SHORT).show();
-
-    }
-
-    public void checkOutData(DatabaseReference databaseReferenceRef, String time) {
-        databaseReferenceRef.child("Check_Out").setValue(time).addOnSuccessListener(unused -> Toast.makeText(getActivity(), "Check Out Successfully", Toast.LENGTH_SHORT).show());
-        Toast.makeText(getActivity(), "Checked Out ", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "Attendance Marked", Toast.LENGTH_SHORT).show();
 
     }
 
@@ -230,8 +224,8 @@ public class ScanFragment extends Fragment {
         attendanceRootRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.child("Check_In").exists()) {
-                    checkOutData(attendanceRootRef, time);
+                if (snapshot.child("Present").exists()) {
+                    Toast.makeText(getActivity(), "Already Present", Toast.LENGTH_SHORT).show();
                 } else {
                     checkInData(attendanceRootRef, date, time, scanResult);
                 }
